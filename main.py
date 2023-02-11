@@ -26,7 +26,7 @@ def find_mismatch(text):
 
 def main():
     text = input()
-    if (text[0].char == 'I'):
+    if(text.find('I') != -1):
         mismatch = find_mismatch(text)
         if(mismatch == "Success"):
             print("Success")
