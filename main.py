@@ -26,11 +26,13 @@ def find_mismatch(text):
 
 def main():
     text = input()
-    mismatch = find_mismatch(text)
-    if(mismatch == True):
-        print("Success")
-    else:
-        print(mismatch)
+    if (text == "I"):
+        text = input()
+        mismatch = find_mismatch(text)
+        if(mismatch == "Success"):
+            print("Success")
+        else:
+            print(mismatch)
 
 
 if __name__ == "__main__":
